@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+var service = new Service();
+service.Execute();
+
+Console.ReadKey();
+
+
+class Service
+{
+    public void Execute()
+    {
+        Console.WriteLine("Sample Data");
+    }
+}
+
