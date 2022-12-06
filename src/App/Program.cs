@@ -4,7 +4,6 @@ service.Execute();
 
 Console.ReadKey();
 
-
 class Service
 {
     public void Execute()
