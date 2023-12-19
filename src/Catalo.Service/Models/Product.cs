@@ -7,5 +7,5 @@ namespace Catalo.Service.Models;
 
 public class Product
 {
-    
+    public int Id { get; set; }
 }
