@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workshop-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workshop
+  template:
+    metadata:
+      labels:
+        app: workshop
+    spec:
+      containers:
+      - name: wsa
+        image: workshopapp
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
